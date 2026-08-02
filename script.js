@@ -1,4 +1,4 @@
-
+console.log("Die Tryin9 script loaded");
 /*=========================================
     DIE TRYIN9
     Premium Gothic Effects
