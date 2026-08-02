@@ -485,6 +485,10 @@ GOTHIC STORM CLOUD
 
     cursor:pointer;
 
+    position:relative;
+
+    z-index:5;
+
 }
 
 
