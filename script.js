@@ -147,4 +147,51 @@ aboutPicture.addEventListener("click", function(){
     }
 
 });
+    // ==========================
+// STORM CLOUD LIGHTNING MUSIC
+// ==========================
 
+const stormCloud = document.getElementById("stormCloud");
+
+const stormSong = document.getElementById("stormMusic");
+
+const lightning = document.getElementById("lightning");
+
+
+let stormPlaying = false;
+
+
+if(stormCloud && stormSong && lightning){
+
+    stormCloud.addEventListener("click", function(){
+
+        // lightning flash
+
+        lightning.classList.remove("strike");
+
+        void lightning.offsetWidth;
+
+        lightning.classList.add("strike");
+
+
+        // music toggle
+
+        if(stormPlaying === false){
+
+            stormSong.play();
+
+            stormPlaying = true;
+
+        }
+
+        else{
+
+            stormSong.pause();
+
+            stormPlaying = false;
+
+        }
+
+    });
+
+}
