@@ -147,3 +147,129 @@ aboutPicture.addEventListener("click", function(){
     }
 
 });
+/*==========================
+GOTHIC STORM CLOUD
+==========================*/
+
+
+.yearLine{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+.stormCloud{
+
+    cursor:pointer;
+
+}
+
+
+.cloud{
+
+    font-size:45px;
+
+    color:#111;
+
+    filter:drop-shadow(0 0 12px rgba(150,0,0,.8));
+
+    transition:.4s;
+
+    animation:cloudFloat 3s ease-in-out infinite;
+
+}
+
+
+.cloud:hover{
+
+    transform:scale(1.2);
+
+    filter:drop-shadow(0 0 25px red);
+
+}
+
+
+@keyframes cloudFloat{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+}
+
+
+/* LIGHTNING FLASH */
+
+
+#lightning{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+}
+
+
+.strike{
+
+    animation:lightningFlash .3s ease;
+
+}
+
+
+@keyframes lightningFlash{
+
+    0%{
+
+        opacity:0;
+
+    }
+
+    30%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:.2;
+
+    }
+
+    70%{
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+    }
+
+}
