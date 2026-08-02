@@ -110,3 +110,40 @@ window.addEventListener("load",()=>{
     document.body.classList.add("loaded");
 
 });
+// ==========================
+// ABOUT IMAGE MUSIC PLAYER
+// ==========================
+
+const aboutPicture = document.getElementById("aboutMusic");
+
+const song = document.getElementById("brandSong");
+
+
+let musicPlaying = false;
+
+
+aboutPicture.addEventListener("click", function(){
+
+    if(musicPlaying === false){
+
+        song.play();
+
+        musicPlaying = true;
+
+        aboutPicture.style.boxShadow =
+        "0 0 40px rgba(180,0,0,.8)";
+
+    }
+
+    else{
+
+        song.pause();
+
+        musicPlaying = false;
+
+        aboutPicture.style.boxShadow =
+        "none";
+
+    }
+
+});
