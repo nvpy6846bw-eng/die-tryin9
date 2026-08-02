@@ -147,50 +147,24 @@ aboutPicture.addEventListener("click", function(){
     }
 
 });
-    // ==========================
-// STORM CLOUD LIGHTNING MUSIC
+// ==========================
+// DIE TRYIN9 ENTER MUSIC
 // ==========================
 
-const stormCloud = document.getElementById("stormCloud");
+const enterButton = document.getElementById("enterButton");
 
-const stormSong = document.getElementById("stormMusic");
+const enterScreen = document.getElementById("enterScreen");
 
-const lightning = document.getElementById("lightning");
-
-
-let stormPlaying = false;
+const music = document.getElementById("stormMusic");
 
 
-if(stormCloud && stormSong && lightning){
+if(enterButton && enterScreen && music){
 
-    stormCloud.addEventListener("click", function(){
+    enterButton.addEventListener("click",()=>{
 
-        // lightning flash
+        music.play();
 
-        lightning.classList.remove("strike");
-
-        void lightning.offsetWidth;
-
-        lightning.classList.add("strike");
-
-
-        // music toggle
-
-        if(stormPlaying === false){
-
-            stormSong.play();
-
-            stormPlaying = true;
-
-        }
-
-        else{
-
-            stormSong.pause();
-
-            stormPlaying = false;
-
-        }
+        enterScreen.classList.add("hide");
 
     });
 
